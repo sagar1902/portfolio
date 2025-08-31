@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagar - Full Stack Developer CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Base styles optimized for print */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Arial", "Helvetica", sans-serif;
+        line-height: 1.4;
+        color: #000; /* Better for printing */
+        background-color: #fff;
+        width: 21cm; /* A4 width */
+        min-height: 29.7cm; /* A4 height */
+        padding: 1.5cm;
+        margin: 0 auto;
+        font-size: 12pt;
+      }
+
+      .cv-container {
+        position: relative;
+      }
+
+      /* Print button */
+      .print-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #2c3e50;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .print-button:hover {
+        background: #3498db;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h3 {
+        color: #000;
+        margin-bottom: 0.5rem;
+        page-break-after: avoid;
+      }
+
+      h1 {
+        font-size: 22pt;
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.3rem;
+      }
+
+      h2 {
+        font-size: 16pt;
+        text-transform: uppercase;
+        margin-top: 1.2rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #ccc;
+      }
+
+      h3 {
+        font-size: 13pt;
+        margin-top: 1rem;
+      }
+
+      /* Section styles optimized for print */
+      .section {
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 11pt;
+      }
+
+      /* Experience and Education */
+      .experience,
+      .education {
+        margin-bottom: 1.2rem;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 0.8rem;
+        padding-left: 12px;
+        border-left: 2px solid #000;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 13pt;
+      }
+
+      .company,
+      .institute {
+        font-weight: 600;
+      }
+
+      .date-location {
+        font-style: italic;
+        margin-bottom: 0.3rem;
+        color: #444;
+        font-size: 11pt;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      li {
+        margin-bottom: 0.3rem;
+        page-break-inside: avoid;
+      }
+
+      /* Skills */
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .skill-category {
+        flex: 1;
+        min-width: 30%;
+        page-break-inside: avoid;
+      }
+
+      .skill-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .skill-list li {
+        margin-bottom: 0.2rem;
+        padding: 2px 0;
+      }
+
+      /* Projects */
+      .project {
+        margin-bottom: 0.8rem;
+        padding-left: 12px;
+        border-left: 1px solid #666;
+        page-break-inside: avoid;
+      }
+
+      .project-title {
+        font-weight: bold;
+      }
+
+      /* Page break for PDF */
+      @media print {
+        body {
+          width: 100%;
+          height: 100%;
+          padding: 1cm;
+          margin: 0;
+          background: white;
+          font-size: 11pt;
+        }
+
+        .cv-container {
+          width: 100%;
+          box-shadow: none;
+          padding: 0;
+        }
+
+        .page-break {
+          page-break-before: always;
+          padding-top: 1cm;
+        }
+
+        .print-button {
+          display: none;
+        }
+
+        /* Ensure links don't appear blue in print */
+        a {
+          color: #000 !important;
+          text-decoration: none;
+        }
+
+        /* Optimize spacing for print */
+        .section {
+          margin-bottom: 0.8rem;
+        }
+
+        h2 {
+          margin-top: 1rem;
+        }
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 8px;
+        border-top: 1px solid #ccc;
+        color: #666;
+        font-size: 10pt;
+      }
+
+      /* Utility class to avoid breaking inside important content */
+      .keep-together {
+        page-break-inside: avoid;
+      }
+
+      /* Force page break when needed */
+      .force-page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-button" onclick="window.print()">
+      <i class="fas fa-print"></i> Print CV
+    </button>
+
+    <div class="cv-container">
+      <!-- Page 1 -->
+      <div>
+        <!-- Header Section -->
+        <header class="keep-together">
+          <h1>Sagar</h1>
+          <p class="professional-title">
+            Full Stack Developer | Expert in MEAN & MERN Stacks | Building
+            Scalable Web Solutions
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i> sagar2002pj@gmail.com
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i> linkedin.com/in/sagar1902
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i> Chandigarh, India
+            </div>
+          </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section keep-together">
+          <h2>Professional Summary</h2>
+          <p>
+            Full Stack Developer with 2+ years of professional experience
+            specializing in JavaScript technologies across both front-end and
+            back-end development. Expertise in building scalable web
+            applications using MEAN and MERN stacks. Proven ability to design,
+            develop, and implement complex web solutions that meet business
+            requirements and enhance user experience.
+          </p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section">
+          <h2>Professional Experience</h2>
+
+          <div class="experience">
+            <div class="experience-item keep-together">
+              <div class="job-title">Full Stack Developer</div>
+              <div class="company">Solutions Tree</div>
+              <div class="date-location">
+                June 2023 - Present | Sahibzada Ajit Singh Nagar, Punjab, India
+              </div>
+              <ul>
+                <li>
+                  Developed and maintained full-stack web applications using
+                  React, Node.js, NestJS and MongoDB
+                </li>
+                <li>
+                  Implemented RESTful APIs and integrated third-party services
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to define, design,
+                  and ship new features
+                </li>
+                <li>
+                  Optimized application performance through code refactoring and
+                  database optimization
+                </li>
+                <li>Mentored junior developers and conducted code reviews</li>
+              </ul>
+            </div>
+
+            <!-- <div class="experience-item keep-together">
+              <div class="job-title">Web Developer</div>
+              <div class="company">Tech Exponent System Pvt. Ltd.</div>
+              <div class="date-location">
+                June 2023 - July 2024 | Sahibzada Ajit Singh Nagar, Punjab,
+                India
+              </div>
+              <ul>
+                <li>
+                  Developed responsive web applications using modern JavaScript
+                  frameworks
+                </li>
+                <li>
+                  Created and maintained server-side logic using Node.js and
+                  Express
+                </li>
+                <li>Designed and implemented database schemas and queries</li>
+                <li>
+                  Collaborated with UI/UX designers to implement visually
+                  appealing interfaces
+                </li>
+                <li>
+                  Participated in agile development processes and daily
+                  stand-ups
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </section>
+
+        <!-- Continued Experience -->
+        <section class="section">
+          <div class="experience">
+            <div class="experience-item keep-together">
+              <div class="job-title">Web Developer Intern</div>
+              <div class="company">RND Experts</div>
+              <div class="date-location">
+                January 2023 - May 2023 | Sahibzada Ajit Singh Nagar, Punjab,
+                India
+              </div>
+              <ul>
+                <li>
+                  Assisted in the development of web applications using
+                  JavaScript technologies
+                </li>
+                <li>
+                  Implemented front-end components based on design
+                  specifications
+                </li>
+                <li>Participated in code reviews and bug fixing</li>
+                <li>
+                  Contributed to documentation and technical specifications
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Page Break -->
+      <!-- <div class="force-page-break"></div> -->
+
+      <!-- Page 2 -->
+      <div>
+        <!-- Skills Section -->
+        <section class="section">
+          <h2>Technical Skills</h2>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend Technologies</h3>
+              <ul class="skill-list">
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Angular</li>
+                <li>HTML5 & CSS3</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Backend Technologies</h3>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>NestJS</li>
+                <li>RESTful APIs</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Database & Tools</h3>
+              <ul class="skill-list">
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Jira & Confluence</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+          <h2>Projects</h2>
+
+          <div class="project keep-together">
+            <div class="project-title">Gaply</div>
+            <ul>
+              <li>
+                A learning management platform designed to identify
+                organizational skill gaps through analysis and automatically
+                recommend targeted learning modules and strategic initiatives.
+              </li>
+              <li>
+                Engineered a secure NestJs/Express backend with RESTful APIs to
+                handle critical business logic for assessment processing,
+                automated report generation, and user authentication.
+              </li>
+              <li>
+                Designed and managed MongoDB schemas to efficiently store and
+                structure complex data for client assessments, generated
+                reports, goals and initiatives.
+              </li>
+              <li>
+                Automated the manual report generation process, reducing a
+                day-long task to minutes and establishing it as the product's
+                core value proposition for the client.
+              </li>
+              <li>
+                Delivered a product that improved operational efficiency,
+                enabling data-driven decision-making and allowing the
+                consultancy to scale its client onboarding process.
+              </li>
+
+              <!-- </li>
+              <li>
+                Implemented user authentication, product catalog, shopping cart,
+                and payment integration
+              </li>
+              <li>
+                Used MongoDB for data storage and Redis for session management
+              </li>
+              <li>
+                Technologies: React, Node.js, Express, MongoDB, Stripe API
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="project keep-together">
+            <div class="project-title">Storefront</div>
+            <ul>
+              <li>
+                Supply Chain Management Software for Wholesale Ecommerce,
+                Product Cataloging (nested categories, bulk uploads via CSV),
+                Order Processing, Packaging Queue, and Gate Pass Generation for
+                logistics.
+              </li>
+              <li>
+                Identified the need for code reusability across multiple admin
+                panels and future client portals. Architected and built a custom
+                React-based utility library that abstracted all API calls,
+                authentication headers, and error handling.
+              </li>
+              <li>
+                This library standardized API integration, reduced development
+                time for new frontends, and ensured consistency and easier
+                maintenance.
+              </li>
+              <!-- <li>
+                State Management & UI: Built dynamic and responsive user
+                interfaces for complex data tables and forms using React, Redux
+                Toolkit, and Ant Design, ensuring a seamless user experience.
+                Built a collaborative task management app with real-time updates
+                using Socket.io
+              </li> -->
+
+              <!-- </li>
+              <li>
+                Implemented drag-and-drop functionality for task organization
+              </li>
+              <li>
+                Designed RESTful APIs for task CRUD operations and user
+                management
+              </li>
+              <li>Technologies: Angular, NestJS, MySQL, Socket.io</li> -->
+            </ul>
+          </div>
+
+          <div class="project keep-together">
+            <div class="project-title">E-com</div>
+            <ul>
+              <!-- <li>
+                Collaborated effectively with the development team to ensure a
+                cohesive approach that drove the project's success.
+              </li> -->
+              <li>
+                Developed a comprehensive e-commerce platform utilizing the MERN
+                stack, delivering a seamless user experience.
+              </li>
+              <li>
+                Implemented essential backend functionalities, including user
+                authentication and authorization, product management, cart
+                management, an admin dashboard, analytics, and a reviews &
+                ratings system.
+              </li>
+              <li>
+                Designed and implemented MongoDB database models to optimize
+                data storage and retrieval, ensuring high performance and
+                scalability.
+              </li>
+              <li>
+                Applied robust security measures, including authentication,
+                authorization, and input validation, to mitigate potential
+                vulnerabilities and protect user data.
+              </li>
+
+              <!-- <li>
+                Created an interactive dashboard for visualizing complex
+                datasets with filtering capabilities
+              </li>
+              <li>
+                Integrated with multiple data sources and implemented real-time
+                data updates
+              </li>
+              <li>
+                Developed custom data visualizations using D3.js and Chart.js
+              </li>
+              <li>Technologies: React, D3.js, Node.js, MongoDB</li> -->
+            </ul>
+          </div>
+
+          <div class="project keep-together">
+            <div class="project-title">Resume Builder</div>
+            <ul>
+              <li>
+                Created a user-friendly interface that simplifies the resume
+                creation process, significantly reducing the time and effort
+                required by users.
+              </li>
+              <li>
+                Designed features that allow users to input their information
+                and generate customized CVs.
+              </li>
+              <li>
+                Enabled support for various customizations, empowering users to
+                easily select and personalize options to suit their preferences.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section keep-together">
+          <h2>Education</h2>
+
+          <div class="education">
+            <div class="education-item">
+              <div class="institute">
+                Chandigarh College of Engineering & Technology (Degree Wing),
+                Panjab University
+              </div>
+              <div class="degree">
+                Bachelor of Engineering in Computer Science & Engineering
+              </div>
+              <div class="date-location">July 2019 - May 2023</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="section keep-together">
+          <h2>Certifications</h2>
+          <ul>
+            <li>
+              <b>Developing Back-End Apps with Node.js and Express</b> - IBM,
+              Coursera (2023)
+            </li>
+            <li><b>React Basics</b> - Meta, Courser (2023)</li>
+          </ul>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="section keep-together">
+          <h2>Additional Information</h2>
+          <ul>
+            <li>
+              Languages: English (Professional Proficiency), Hindi (Native)
+            </li>
+            <li>Active contributor to open-source projects on GitHub</li>
+            <li>Regular participant in hackathons and coding competitions</li>
+          </ul>
+        </section>
+
+        <!-- <div class="footer">
+          <p>
+            This CV was generated on <span id="current-date"></span> | Sagar -
+            Full Stack Developer
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      // Set current date in footer
+      document.getElementById("current-date").textContent =
+        new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+
+      // Add print functionality with a confirmation message
+      document
+        .querySelector(".print-button")
+        .addEventListener("click", function () {
+          console.log("Preparing document for printing...");
+          // setTimeout(function () {
+          //   // alert(
+          //   //   'For best results, select "Save as PDF" in the print dialog and set margins to "Default".'
+          //   // );
+          // }, 100);
+        });
+
+      // Add beforeprint event listener to optimize for printing
+      window.addEventListener("beforeprint", function () {
+        // Simplify the document for printing
+        document.body.classList.add("printing");
+      });
+
+      window.addEventListener("afterprint", function () {
+        // Revert changes after printing
+        document.body.classList.remove("printing");
+      });
+    </script>
+  </body>
+</html>

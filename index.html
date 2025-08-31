@@ -249,13 +249,16 @@
               >Contact</a
             >
           </div>
-          <div class="flex items-center">
-            <a
-              href="#"
+          <div
+            class="flex items-center cursor-pointer"
+            id="download-cv"
+            onclick="downloadCV()"
+          >
+            <span
               class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all"
             >
               Download CV
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -678,7 +681,8 @@
               </h3>
               <p class="text-blue-400 mb-2">Solutions Tree</p>
               <p class="text-gray-400 mb-4">
-                June 2023 - Present (2 years 3 months) | Mohali district, India
+                June 2023 - Present (2 years 3 months) | Sahibzada Ajit Singh
+                Nagar, Punjab, India
               </p>
               <p class="text-gray-300">
                 Developed and maintained web applications using React and
@@ -690,7 +694,7 @@
           </div>
 
           <!-- Experience 2 -->
-          <div class="flex">
+          <!-- <div class="flex">
             <div class="flex flex-col items-center mr-6">
               <div
                 class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center"
@@ -712,7 +716,7 @@
                 applications for maximum speed and scalability.
               </p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Experience 3 -->
           <div class="flex">
@@ -724,7 +728,9 @@
               </div>
             </div>
             <div class="flex-1">
-              <h3 class="text-xl font-semibold text-white">Web Developer Intern</h3>
+              <h3 class="text-xl font-semibold text-white">
+                Web Developer Intern
+              </h3>
               <p class="text-blue-400 mb-2">RND Experts</p>
               <p class="text-gray-400">
                 January 2023 - May 2023 (5 months) | Sahibzada Ajit Singh Nagar,
@@ -753,32 +759,35 @@
               <div class="terminal-button bg-red-500"></div>
               <div class="terminal-button bg-yellow-500"></div>
               <div class="terminal-button bg-green-500"></div>
-              <div class="ml-2 text-gray-400 text-sm">
-                ecommerce-platform.js
-              </div>
+              <div class="ml-2 text-gray-400 text-sm">gaply.js</div>
             </div>
             <div class="terminal-content">
-              <h3 class="text-xl font-bold text-white mb-2">
-                E-commerce Platform
-              </h3>
+              <h3 class="text-xl font-bold text-white mb-2">Gaply</h3>
               <p class="text-gray-400 mb-4">
-                Full-stack e-commerce solution with React, Node.js, and MongoDB
+                Developed an automated gap-analysis LMS using the MERN stack,
+                featuring a NestJS/Express backend to process assessments and
+                generate reports, reducing a day-long task to minutes and
+                improving scalability.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >React</span
+                  >React.js</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Node.js</span
+                  >NestJs</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
+                  >Typescript</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
                   >MongoDB</span
                 >
               </div>
-              <div class="flex justify-between items-center">
+              <!-- <div class="flex justify-between items-center">
                 <a
                   href="#"
                   class="text-blue-400 hover:text-blue-300 flex items-center"
@@ -788,7 +797,7 @@
                 <a href="#" class="text-gray-400 hover:text-white">
                   <i class="fab fa-github text-xl"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -798,30 +807,31 @@
               <div class="terminal-button bg-red-500"></div>
               <div class="terminal-button bg-yellow-500"></div>
               <div class="terminal-button bg-green-500"></div>
-              <div class="ml-2 text-gray-400 text-sm">task-manager.js</div>
+              <div class="ml-2 text-gray-400 text-sm">supply-chain.js</div>
             </div>
             <div class="terminal-content">
-              <h3 class="text-xl font-bold text-white mb-2">
-                Task Management App
-              </h3>
+              <h3 class="text-xl font-bold text-white mb-2">Storefront</h3>
               <p class="text-gray-400 mb-4">
-                Collaborative task management application with real-time updates
+                Developed a supply chain management platform featuring complex
+                product cataloging and logistics, alongside a reusable React
+                utility library that standardized API integration and cut
+                frontend development time.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Vue.js</span
+                  >React.js</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Express</span
+                  >Javascript</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Socket.io</span
+                  >Tailwind CSS</span
                 >
               </div>
-              <div class="flex justify-between items-center">
+              <!-- <div class="flex justify-between items-center">
                 <a
                   href="#"
                   class="text-blue-400 hover:text-blue-300 flex items-center"
@@ -831,7 +841,7 @@
                 <a href="#" class="text-gray-400 hover:text-white">
                   <i class="fab fa-github text-xl"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -841,37 +851,47 @@
               <div class="terminal-button bg-red-500"></div>
               <div class="terminal-button bg-yellow-500"></div>
               <div class="terminal-button bg-green-500"></div>
-              <div class="ml-2 text-gray-400 text-sm">data-dashboard.js</div>
+              <div class="ml-2 text-gray-400 text-sm">e-commerce.js</div>
             </div>
             <div class="terminal-content">
-              <h3 class="text-xl font-bold text-white mb-2">
-                Data Visualization Dashboard
-              </h3>
+              <h3 class="text-xl font-bold text-white mb-2">E - com</h3>
               <p class="text-gray-400 mb-4">
-                Interactive dashboard for visualizing complex datasets
+                Built a scalable MERN e-commerce platform from the ground up,
+                implementing secure backend functionalities, optimized data
+                models, and an admin dashboard to deliver a seamless user
+                experience.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >D3.js</span
+                  >React.js</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >React</span
+                  >Node.js</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Python</span
+                  >Express.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
+                  >MongoDB</span
                 >
               </div>
               <div class="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://ecom-frontend-alpha.vercel.app/"
+                  target="_blank"
                   class="text-blue-400 hover:text-blue-300 flex items-center"
                 >
                   View Project <i class="fas fa-external-link-alt ml-2"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-white">
+                <a
+                  href="https://github.com/sagar1902/ecom-frontend"
+                  target="_blank"
+                  class="text-gray-400 hover:text-white"
+                >
                   <i class="fab fa-github text-xl"></i>
                 </a>
               </div>
@@ -884,37 +904,39 @@
               <div class="terminal-button bg-red-500"></div>
               <div class="terminal-button bg-yellow-500"></div>
               <div class="terminal-button bg-green-500"></div>
-              <div class="ml-2 text-gray-400 text-sm">chat-app.js</div>
+              <div class="ml-2 text-gray-400 text-sm">resume-builder.js</div>
             </div>
             <div class="terminal-content">
-              <h3 class="text-xl font-bold text-white mb-2">
-                Real-time Chat Application
-              </h3>
+              <h3 class="text-xl font-bold text-white mb-2">Resume Builder</h3>
               <p class="text-gray-400 mb-4">
-                Instant messaging platform with rooms and file sharing
+                Developed a user-centric resume builder with robust
+                customization features, enabling users to easily input their
+                data and generate personalized, professional CVs tailored to
+                their preferences.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >React</span
+                  >React.js</span
                 >
                 <span
                   class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Socket.io</span
-                >
-                <span
-                  class="px-3 py-1 bg-slate-800 text-gray-300 rounded-full text-sm"
-                  >Node.js</span
+                  >Chakra UI</span
                 >
               </div>
               <div class="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://resume-builder-roan.vercel.app/"
+                  target="_blank"
                   class="text-blue-400 hover:text-blue-300 flex items-center"
                 >
                   View Project <i class="fas fa-external-link-alt ml-2"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-white">
+                <a
+                  href="https://github.com/sagar1902/resume_builder"
+                  target="_blank"
+                  class="text-gray-400 hover:text-white"
+                >
                   <i class="fab fa-github text-xl"></i>
                 </a>
               </div>
@@ -1085,6 +1107,29 @@
 
       // Replay every 10 seconds
       setInterval(replayTypewriter, 10000);
+
+      function downloadCV() {
+        // Create a temporary anchor element
+        const link = document.createElement("a");
+
+        // Set the href to the path of your CV file
+        link.href = "Sagar_CV.pdf";
+
+        // Set the download attribute with the desired filename
+        link.download = "Sagar_CV.pdf";
+
+        // Append to the document body
+        document.body.appendChild(link);
+
+        // Programmatically click the link to trigger download
+        link.click();
+
+        // Clean up by removing the link
+        document.body.removeChild(link);
+
+        // Optional: Show a success message
+        // alert("Your CV is downloading as Sagar_CV.pdf");
+      }
 
       // Add scroll animation for elements
       document.addEventListener("DOMContentLoaded", function () {
